@@ -13,7 +13,8 @@ const Auth = () => {
             const endpoint = isLogin ? '/login' : '/register';
             const response = await axios.post(`http://localhost:5000${endpoint}`, { email, password });
             setMessage(response.data.message || 'Success');
-        } catch (error) {
+        } catch (error) {khgyv 
+            kjbjjb
             setMessage(error.response?.data?.error || 'An error occurred');
         }
     };
